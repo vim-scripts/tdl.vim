@@ -1,0 +1,7 @@
+Copy tdl.vim to the `runtimepath/syntax' directory. Add the following line to
+the `runtimepath/filetype.vim' file:
+	au BufNewFile,BufRead *.tdl             setf tdl
+Wanna highlighting of a target language in your tree definition file, yeah? Add
+line like this to your .vimrc:
+	let treedl_target_language = "java"
+Currently "java" and "csharp" are supported.
